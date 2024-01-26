@@ -2,7 +2,8 @@ import React from "react";
 import TodoItem from "./TodoItem";
 
 
-export default function TodoList({todoL}) {
+export default function TodoList(props) {
+  let todoL=props.todoL;
   if(todoL.length===0){
     return <h1>No tasks!</h1>
   }else{
